@@ -47,11 +47,3 @@ Make sure `gender_model.keras` and `yolov8n-face-lindevs.pt` are in the same fol
 - Small model: the CNN used is intentionally small — good for quick prototyping but may underperform on real-world variability.
 - Improvements: data augmentation, transfer learning (e.g., MobileNetV2 or EfficientNet), multi-class outputs, evaluation metrics (precision/recall, confusion matrix), calibration, and privacy-aware deployment.
 
-## Ethics and privacy
-Automatic gender classification can be error-prone and sensitive. Use responsibly, obtain consent where required, and consider excluding deployment where it could harm individuals or violate privacy laws.
-
-## Reproducibility
-- To reproduce training exactly: set random seeds for TensorFlow, NumPy, and Python, use the same versions of libraries, and train on the same dataset splits. Notebook currently trains for 15 epochs and saves the resulting model.
-
-## Contact
-If you want help extending this project (transfer learning, deployment, or dataset audits), open an issue or contact the author.
